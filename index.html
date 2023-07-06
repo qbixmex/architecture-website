@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Architecture Website</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-  
+  <!-- Navbar (sit on top) -->
+  <section id="navbar">
+    <div class="navbar-logo">
+      <a class="navbar-logo" href="#home"><b>BR</b> Architects</a>
+    </div>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="navbar-links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </section>
+
+  <!-- Header -->
+  <header id="header">
+    <img src="./images/architect.jpg" alt="Architecture" width="1500" height="800">
+    <div>
+      <h1><span><b>BR</b></span> <span>Architects</span></h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Section -->
+    <section id="projects">
+      <header class="projects-header">
+        <h3>Projects</h3>
+      </header>
+      <section class="projects-container">
+        <div>
+          <div>
+            <div>Summer House</div>
+            <img src="./images/house5.jpg" alt="House">
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Brick House</div>
+            <img src="./images/house2.jpg" alt="House">
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Renovated</div>
+            <img src="./images/house3.jpg" alt="House">
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Barn House</div>
+            <img src="./images/house4.jpg" alt="House">
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Summer House</div>
+            <img src="./images/house2.jpg" alt="House">
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Brick House</div>
+            <img src="./images/house5.jpg" alt="House">
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Renovated</div>
+            <img src="./images/house4.jpg" alt="House">
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Barn House</div>
+            <img src="./images/house3.jpg" alt="House">
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+
+    <section id="team">
+      <div>
+        <img src="./images/team2.jpg" alt="John Doe">
+        <h3>John Doe</h3>
+        <p>CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div><button>Contact</button></div>
+      </div>
+      <div>
+        <img src="./images/team1.jpg" alt="Jane Doe">
+        <h3>Jane Doe</h3>
+        <p>Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div><button>Contact</button></div>
+      </div>
+      <div>
+        <img src="./images/team3.jpg" alt="Mike Ross">
+        <h3>Mike Ross</h3>
+        <p>Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div><button>Contact</button></div>
+      </div>
+      <div>
+        <img src="./images/team4.jpg" alt="Dan Star">
+        <h3>Dan Star</h3>
+        <p>Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div><button>Contact</button></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Lets get in touch and talk about your next project.</p>
+      <form action="#" target="_blank">
+        <input type="text" placeholder="Name" required name="name">
+        <input type="text" placeholder="Email" required name="email">
+        <input type="text" placeholder="Subject" required name="subject">
+        <textarea type="text" placeholder="Comment" required name="comment" rows="5"></textarea>
+        <button type="submit">
+          <span class="fa fa-paper-plane"></span> SEND MESSAGE
+        </button>
+      </form>
+    </section>
+
+    <!-- Image of location/map -->
+    <div id="location">
+      <img src="./images/map.jpg">
+    </div>
+
+    <!-- End page content -->
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>Powered by <a href="#">w3.css</a></p>
+  </footer>
+
 </body>
+
 </html>
