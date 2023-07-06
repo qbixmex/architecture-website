@@ -1,15 +1,75 @@
 #team {
-  display: none;
+  width: 90%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member {
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &-image {
+    width: 100%;
+    height: auto;
+  }
+  &-heading {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  &-position {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: $gray-dark;
+    margin-bottom: 15px;
+  }
+  &-description {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  &-btn {
+    color: $black;
+    width: 100%;
+    border: none;
+    background-color: $button-default-color;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 300ms ease-in-out;
+    &:hover {
+      background-color: darken($button-default-color, 10);
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  #team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team-member {
+    flex-basis: 49%;
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .team-member {
+    flex-basis: 24%;
+  }
+}
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
