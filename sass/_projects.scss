@@ -1,15 +1,73 @@
+#header { display: none; }
+
 #projects {
-  display: none;
+  width: 90%;
+  margin: 40px auto;
 }
 
+.projects-header {
+  h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px $gray-light;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .project {
+    position: relative;
+    &-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $black;
+      color: $white;
+      width: fit-content;
+      padding: 8px 16px;
+    }
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Extra Small devices
+@media (max-width: 576px) {}
+
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    .project {
+      flex-basis: 48%;
+      margin-bottom: 15px;
+    }
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .projects-container {
+    .project {
+      flex-basis: 24%;
+      margin-bottom: 20px;
+    }
+  }
+}
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
