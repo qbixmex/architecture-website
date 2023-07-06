@@ -1,5 +1,23 @@
 #about {
-  display: none;
+  width: 90%;
+  margin: 40px auto;
+  font-family: serif;
+
+  h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px $gray-light;
+  }
+
+  p {
+    font-family: Verdana, sans-serif;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
