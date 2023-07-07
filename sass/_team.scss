@@ -1,8 +1,6 @@
 #team {
   width: 90%;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
+  margin: 40px auto 80px;
 }
 
 .team-member {
@@ -50,29 +48,30 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  #team {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .team-member {
-    flex-basis: 49%;
-  }
-}
+@media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  #team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
   .team-member {
-    flex-basis: 24%;
+    margin-bottom: 0;
   }
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  #team {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {}
