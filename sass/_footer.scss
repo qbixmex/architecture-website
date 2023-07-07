@@ -1,5 +1,19 @@
 #footer {
-  display: none;
+  padding: 40px 0;
+  background-color: $black;
+  color: $white;
+  position: relative;
+  box-sizing: border-box;
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+  }
+  a {
+    color: $white;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
