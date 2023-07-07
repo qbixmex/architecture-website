@@ -7,6 +7,7 @@
   <title>Architecture Website</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <script src="./js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -14,10 +15,13 @@
     <div class="navbar-logo">
       <a class="navbar-logo" href="#home"><b>BR</b> Architects</a>
     </div>
-    <div class="navbar-links">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <div id="navbar-links" class="navbar-links nav-links-hidden">
+      <a class="navbar-link" href="#projects">Projects</a>
+      <a class="navbar-link" href="#about">About</a>
+      <a class="navbar-link" href="#contact">Contact</a>
+    </div>
+    <div id="menu-btn" class="navbar-links-menu-btn">
+      <img src="./svg/hamburger.svg" alt="Menu Icon">
     </div>
   </section>
 
