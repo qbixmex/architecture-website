@@ -110,17 +110,21 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <h3>Contact</h3>
-      <p>Lets get in touch and talk about your next project.</p>
-      <form action="#" target="_blank">
-        <input type="text" placeholder="Name" required name="name">
-        <input type="text" placeholder="Email" required name="email">
-        <input type="text" placeholder="Subject" required name="subject">
-        <textarea type="text" placeholder="Comment" required name="comment" rows="5"></textarea>
-        <button type="submit">
-          <span class="fa fa-paper-plane"></span> SEND MESSAGE
-        </button>
+    <section id="contact" class="contact">
+      <h3 class="contact-heading">Contact</h3>
+      <p class="contact-description">Lets get in touch and talk about your next project.</p>
+      <form class="contact-form" action="#" target="_blank">
+        <div class="contact-form-inputs">
+          <input class="contact-input" type="text" placeholder="Name" required name="name" autocomplete="off">
+          <input class="contact-input"  type="text" placeholder="Email" required name="email" autocomplete="off">
+          <input class="contact-input" type="text" placeholder="Subject" required name="subject" autocomplete="off">
+        </div>
+        <div class="contact-form-comment-submit">
+          <textarea class="contact-form-text-area" type="text" placeholder="Comment" required name="comment"></textarea>
+          <button class="contact-form-submit-button" type="submit">
+            <span class="fa fa-paper-plane"></span> SEND MESSAGE
+          </button>
+        </div>
       </form>
     </section>
 
